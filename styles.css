@@ -1,0 +1,206 @@
+/* structure de base pour le style css */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgb(204, 0, 150),#8f7282,#2f2f2f);
+}
+section.apropos{
+    width: 100%;
+    height: 100vh;
+    padding: 78px 0px;
+}
+section.apropos img{
+    height: auto;
+    width: 500px;
+    border-radius: 20px;
+}
+div.texte{
+    width: 550px;
+}
+.texte h1{
+    color: aliceblue;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+.texte h5{
+    color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.texte{
+    color: #fcf;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-align: justify;
+    font-size: 22px;
+    margin-bottom: 45px;
+} 
+.main{
+    display: flex;
+    width: 1130px;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    color: #f9004d;
+}
+.button.groupe{
+    display: flex;
+    gap: 15px;
+
+}
+button{
+    background: #f9004d;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 2s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+
+}
+
+#menu-btn{
+    display: none;
+}
+header label{
+    font-weight: bold;
+    font-size: 30px;
+    color: #df3b9d;
+}
+
+.nave{
+    display: inline;
+    list-style-type:none ;
+    border: 2px solid rgb(241, 171, 207);
+    border-radius: 30px;
+    cursor: pointer;
+    background: #f9004d; 
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 13px 30px;
+    margin: 8px;
+    border-radius: 30px;
+    transition: 2s;
+}
+
+.navbar-cache{
+    display: none;
+}
+
+.nave:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+}
+@media screen and (max-width:768px){
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main img{
+        width: 63%;
+        max-width: none;
+
+    }
+    .texte h1{
+        font-size: 28px;
+    }
+    .texte h5{
+        font-size: 20px;
+    }
+    .texte p{
+        font-size: 14px;
+    }
+    .texte {
+        width:80% ;
+        text-align: center;
+    }
+    #menu-btn{
+    display: flex;
+    }
+    button{
+    flex: 1;
+    margin: 15px;
+    }
+    .nave{
+        display: none;
+    }
+
+    .navbar-cache{
+        display: none;
+        flex-direction: row;
+        align-items: start;
+        background-color: #1a1a1a;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left:0 ;
+        right: 0;
+        bottom: 0;
+        color: black;
+    }
+    .navbar-content{
+        background-color: aqua;
+        background: white;
+        padding: 10px 20px;
+        height: 100%;
+        width: 35%;
+    }
+
+    .navbar-content label{
+        font-size: 30px;
+        font-weight: bold;
+        
+    }
+    .navbar-content nav{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+    }
+
+    .navbar-content nav a{
+        padding: 2px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        margin-bottom: 7px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .navbar-content nav a:hover{
+        padding:2px;
+        color: #f9004d;
+        background-color: #edb7c8;
+        transition: all 0.5s;
+        border: 0.1px solid #f9004d;
+    }
+    .Go{
+        background: transparent;
+        width: 65%;
+        height: 100%;
+    }
+
+    header label{
+    font-weight: bold;
+    font-size: 30px;
+    color: #f9004d;
+}
+    
+}
